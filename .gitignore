@@ -1,0 +1,23 @@
+# Simulation executables
+*.out
+*.exe
+*.vvp
+*_sim
+
+# Waveform files
+*.vcd
+
+# GTKWave save files
+*.gtkw
+
+# Temporary files
+*.log
+
+# VS Code
+.vscode/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
