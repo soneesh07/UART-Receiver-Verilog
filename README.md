@@ -45,7 +45,33 @@ The receiver consists of the following modules:
 | STOP | Waits for the stop bit and completes reception |
 
 ---
-
+## UART Receiver Block Diagram
+                 +----------------+
+RX ------------->| Start Detector |
+                 +----------------+
+                         |
+                         v
+                 +----------------+
+                 |      FSM       |
+                 +----------------+
+                    |         |
+                    |         |
+                    v         v
+           +---------------+  +--------------+
+           | Baud Counter  |  | Bit Counter  |
+           +---------------+  +--------------+
+                    |                |
+                    +-------+--------+
+                            |
+                            v
+                     +--------------+
+                     | Shift Register|
+                     +--------------+
+                            |
+                            v
+                     +--------------+
+                     |  data_out    |
+                     +--------------+
 ## Simulation
 
 Simulation performed using:
