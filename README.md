@@ -46,6 +46,8 @@ The receiver consists of the following modules:
 
 ---
 ## UART Receiver Block Diagram
+
+```text
                  +----------------+
 RX ------------->| Start Detector |
                  +----------------+
@@ -64,14 +66,15 @@ RX ------------->| Start Detector |
                     +-------+--------+
                             |
                             v
-                     +--------------+
+                     +---------------+
                      | Shift Register|
-                     +--------------+
+                     +---------------+
                             |
                             v
-                     +--------------+
-                     |  data_out    |
-                     +--------------+
+                     +---------------+
+                     |   data_out    |
+                     +---------------+
+```
 ## Simulation
 
 Simulation performed using:
